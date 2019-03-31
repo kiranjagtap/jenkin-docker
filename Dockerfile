@@ -2,11 +2,7 @@
 # Super simple example of a Dockerfile
 #
 FROM maven:3.5.0-jdk-8
-MAINTAINER Ravisankar Munusamy "ravisankar.munusamy@gmail.com"
-USER root 
-RUN apt-get update 
-RUN groupadd docker && gpasswd -a jenkins docker 
-USER jenkins
+MAINTAINER Kiran Jagtap "karan27288@gmail.com"
 
 ADD target/*.jar /tmp/app.jar
 
